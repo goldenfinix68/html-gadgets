@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Number Line</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+<body>
+
+<div class="number-line" id="numberLine">
+    <div class="tick-mark" style="left: 0%;"><div class="tick-label">-5</div></div>
+    <div class="tick-mark" style="left: 10%;"><div class="tick-label">-4</div></div>
+    <div class="tick-mark" style="left: 20%;"><div class="tick-label">-3</div></div>
+    <div class="tick-mark" style="left: 30%;"><div class="tick-label">-2</div></div>
+    <div class="tick-mark" style="left: 40%;"><div class="tick-label">-1</div></div>
+    <div class="tick-mark" style="left: 50%;"><div class="tick-label">0</div></div>
+    <div class="tick-mark" style="left: 60%;"><div class="tick-label">1</div></div>
+    <div class="tick-mark" style="left: 70%;"><div class="tick-label">2</div></div>
+    <div class="tick-mark" style="left: 80%;"><div class="tick-label">3</div></div>
+    <div class="tick-mark" style="left: 90%;"><div class="tick-label">4</div></div>
+    <div class="tick-mark" style="left: 100%;"><div class="tick-label">5</div></div>
+
+    <div class="highlight-line" id="highlightLine"></div>
+
+    <div class="draggable-point" id="point1" style="left: 40%;"></div>
+    <div class="draggable-point" id="point2" style="left: 60%;"></div>
+</div>
+
+
+</body>
+</html>
