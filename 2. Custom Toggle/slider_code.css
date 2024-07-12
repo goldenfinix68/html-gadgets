@@ -1,0 +1,78 @@
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 160px; /* Increase width to accommodate longer text */
+  height: 50px; /* Height remains the same */
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px; /* Maintain rounded corners */
+}
+
+.toggle-switch label:before {
+  position: absolute;
+  content: "";
+  height: 40px; /* Adjust height */
+  width: 40px; /* Adjust width to ensure proper toggle handle size */
+  left: 5px; /* Adjust left position */
+  bottom: 5px; /* Adjust bottom position */
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%; /* Ensure the toggle handle is round */
+}
+
+input:checked + label {
+  background-color: #2196f3;
+}
+
+input:checked + label:before {
+  transform: translateX(110px); /* Adjust transform to match increased width */
+}
+
+.toggle-on,
+.toggle-off {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 50px; /* Match line height to overall switch height */
+  font-size: 16px; /* Adjust font size */
+  transition: opacity 0.4s; /* Add transition for smooth hide/show */
+}
+
+.toggle-on {
+  left: 0;
+}
+
+.toggle-off {
+  right: 0;
+}
+
+input:checked + label .toggle-off {
+  opacity: 0; /* Hide the "REMOVE" label when checked */
+}
+
+input:not(:checked) + label .toggle-off {
+  opacity: 1; /* Ensure "REMOVE" label is visible when not checked */
+}
+
+input:checked + label .toggle-on {
+  opacity: 1; /* Ensure "ADD" label is visible when checked */
+}
+
+input:not(:checked) + label .toggle-on {
+  opacity: 0; /* Hide the "ADD" label when not checked */
+}
