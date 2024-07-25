@@ -9,3 +9,9 @@ HTML CSS jQuery
 
 Customized Enable/Disable Switch
 HTML CSS
+
+## 3. Fingerprint Load
+
+Fingerprint Load Animation
+
+HTML CSS
